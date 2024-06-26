@@ -21,6 +21,12 @@ return new class extends Migration
             //$table->text('profile');
             $table->timestamps();
         });
+
+        Schema::create('jurusan', function (Blueprint $table) {
+            $table->id();
+            $table->string('nama_jurusan');
+            $table->timestamps();
+        });
     }
 
     /**
