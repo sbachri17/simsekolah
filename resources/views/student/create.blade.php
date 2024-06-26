@@ -17,6 +17,17 @@
             <td><input type="text" name="name" placeholder="nama" class="form-control"></td>
         </tr>
         <tr>
+            <td>Jurusan</td>
+            <td>
+                <select name="jurusan_id" class="form-control">
+                    @foreach ($jurusan as $j)
+                        <option value="{{ $j->id}}">{{ $j->nama_jurusan}}</option>
+                    @endforeach
+                </select>
+            </td>
+        </tr>
+        
+        <tr>
             <td>Tanggal Lahir</td>
             <td><input type="date" name="birth_date" placeholder="Tanggal Lahir" class="form-control"></td>
         </tr>
