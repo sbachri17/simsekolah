@@ -2,18 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 
-// Route::get('/', function () {
-//     return view('hello');
-// });
-
-// Route::get('/contact_form', function () {
-//     return view('contact_form');
-// });
-
 //route resource for student
 //Route::resource('/student', App\Http\Controllers\StudentController::class);
 
-//
+//route resource for jurusan
+//Route::resource('/student', App\Http\Controllers\StudentController::class);
+
+//Routing tabel student
 use App\Http\Controllers\StudentController;
 Route::get('/student', [StudentController::class, 'index']);
 Route::post('/student', [StudentController::class, 'store']);
